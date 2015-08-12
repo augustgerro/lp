@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Лепросамкопоиск</title>
+<title>Кисасерч</title>
 <link rel="stylesheet" type="text/css" href="/static/css/trackbar.css" />
 <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
 <script type="text/javascript" src="/static/js/jquery-1.2.3.min.js"></script>
@@ -127,7 +127,7 @@ function getProfiles(){
           countProfiles();
           getProfiles();
       }
-    }
+    }     
   });
 };
 
@@ -178,7 +178,7 @@ $(document).ready(function(){
     </td>
   </tr>
   <tr>
-    <td width="160">Возраст сучечке:</td>
+    <td width="160">Возраст сучичек:</td>
     <td>
       <div id="ageSelect"></div>
         <input type="hidden" id="fromAge" name="fromAge" value="18"/>
@@ -191,6 +191,10 @@ $(document).ready(function(){
     <td>
       <p>
         <label>
+            <br />
+           <input type="radio" name="fromCity" value="country=248&region=349&city=269" id="where_3" /> <!-- country-248region-349city-269 -->
+          Минск</label>
+          <br />
           <input type="radio" checked="checked" name="fromCity" value="country=3159&region=4312&city=4400" id="where_0" /> <!-- country-3159region-4312/city-4400 -->
           Москва</label>
         <br />
@@ -199,55 +203,9 @@ $(document).ready(function(){
           Питер</label>
         <br />
         <label>
-          <input type="radio" name="fromCity" value="country=3159&region=9964&city=9977" id="where_2" /> <!-- country-3159region-9964city-9977 -->
-          Днепр</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=248&region=349&city=269" id="where_3" /> <!-- country-248region-349city-269 -->
-          Минск</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=4891&city=4917" id="where_4" /> <!-- country-3159region-4891city-4917 -->
-          Самара</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=5191&city=5219" id="where_5" /> <!-- country-3159region-5191city-5219 -->
-          Ставрополь</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=4052&city=4079" id="where_6" /> <!-- country-3159region-4052city-4079 -->
-          Краснодар</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=3296&city=3345" id="where_7" /> <!-- country-3159region-3296city-3345 -->
-          Уфа</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=3892&city=3345" id="where_8" /> <!-- country-3159region-3892city-3912 -->
-          Петрозаводск</label>
-          <br />
            <input type="radio" name="fromCity" value="country=9908&region=10165&city=10184" id="where_9" /> <!-- country-9908region-10165city-10184 -->
           Киев</label>
           <br />
-           <input type="radio" name="fromCity" value="country=3159&region=3563&city=3612" id="where_10" /> <!-- country-3159region-4503city-4517 -->
-          Нижний Новгород</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=9908&region=10504&city=10532" id="where_11" /> <!-- country-9908region-10504city-10532 -->
-          Харьков</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=4800&city=4848" id="where_12" /> <!-- country-3159region-4800city-4848 -->
-          Ростов-на-Дону</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=4528&city=4549" id="where_13" /> <!-- country-3159region-4528city-4549 -->
-          Новосибирск</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=3352&city=3354" id="where_14" /> <!-- country-3159region-3352city-3354 -->
-          Белгород</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=3296&city=5507" id="where_15" /> <!-- country-3159region-5507city-5539 -->
-          Челябинск</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=4633&city=4650" id="where_16" /> <!-- country-3159region-4633city-4650 -->
-          Орел</label>
-          <br />
-           <input type="radio" name="fromCity" value="country=3159&region=3251&city=3283" id="where_17" /> <!-- country-3159region-3251city-3283 -->
-          Астрахань</label>
-          
-          
         <br />
     </p></td>
   </tr>
@@ -265,13 +223,13 @@ $(document).ready(function(){
 </form>
 
 <div id="text">
-  Сучке в базе: <span id="profiles_count"></span><br/>
+  Телочек в базе: <span id="profiles_count"></span><br/>
   Просмотренных: <span id="viewed_profiles_count"></span><br/>
   Лайканых: <span id="liked_profiles_count"></span><br/>
   Что можно сделать:<br />
-    <a href="#" onclick="">удалить всех сучке</a><br />
-    <a href="#" onclick="" id="unvisit">развидеть всех сучке</a><br />
-    <a href="#" onclick="" id="unlike">разлайкать всех сучке</a><br />
+    <a href="#" onclick="">удалить всех</a><br />
+    <a href="#" onclick="" id="unvisit">сброс просмотров профилей</a><br />
+    <a href="#" onclick="" id="unlike">разлайкать всеху</a><br />
     <a href="#" onclick="countProfiles();countViewedProfiles();">пересчитать моих сучке</a>
 </div>
 <hr/>
