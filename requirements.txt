@@ -1,0 +1,5 @@
+https://pypi.python.org/packages/source/t/tornado/tornado-2.4.1.tar.gz
+torndb
+pyquery
+mysql
+ioloop
